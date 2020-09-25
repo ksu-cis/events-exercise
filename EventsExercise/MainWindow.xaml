@@ -1,0 +1,27 @@
+﻿<Window x:Class="EventsExercise.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EventsExercise"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="700">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <local:Board Grid.RowSpan="3"/>
+        <TextBlock Name="Turn" FontSize="40" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+              X's Turn
+        </TextBlock>
+        <Button Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+            Reset Game
+        </Button>        
+    </Grid>
+</Window>
