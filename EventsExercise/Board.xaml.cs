@@ -47,7 +47,7 @@ namespace EventsExercise
                     squares[3 * i] == squares[3 * i + 1] && 
                     squares[3 * i + 1] == squares[3 * i + 2])
                 {
-                    return squares[i];
+                    return squares[3 * i];
                 }
                 // check horizontals 
                 if (squares[i] != Mark.None &&
