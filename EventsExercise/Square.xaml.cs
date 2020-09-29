@@ -18,12 +18,12 @@ namespace EventsExercise
     /// </summary>
     public partial class Square : UserControl
     {
-        private char mark = ' ';
+        private Mark mark = Mark.None;
 
         /// <summary>
         /// Gets or sets the mark of this square (an X or O)
         /// </summary>
-        public char Mark
+        public Mark Mark
         {
             get { return mark; }
             set
