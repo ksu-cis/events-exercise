@@ -29,7 +29,7 @@ namespace EventsExercise
             set
             {
                 mark = value;
-                markTextBlock.Text = mark.ToString();
+                markTextBlock.Text = ((char)mark).ToString();
             }
         }
 
